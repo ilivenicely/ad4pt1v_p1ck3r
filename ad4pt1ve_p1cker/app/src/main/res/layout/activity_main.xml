@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.robertmccormick.mccormickrobert_ce04.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/first_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/first_array" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/second_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/second_array" />
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:dividerHeight="1px"
+            android:divider="@android:color/black"
+            android:layout_height="match_parent">
+        </ListView>
+
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="2"
+            android:columnWidth="200dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</LinearLayout>
